@@ -27,8 +27,16 @@ function Home({ data }) {
   );
 }
 export async function getStaticProps() {
-  const response = await fetch(`http://localhost:8080/blogs`);
-  const data = await response.json();
+  // const response = await fetch(`http://localhost:8080/blogs`);
+  // const data = await response.json();
+  let data = [
+    { id: 1, title: "My feeds 1", description: "My feeds description 1" },
+    { id: 2, title: "My feeds 2", description: "My feeds description 2" },
+    { id: 3, title: "My feeds 3", description: "My feeds description 3" },
+    { id: 4, title: "My feeds 4", description: "My feeds description 4" },
+    { id: 5, title: "My feeds 5", description: "My feeds description 5" },
+    { id: 6, title: "My feeds 6", description: "My feeds description 6" },
+  ];
   return {
     props: {
       data,

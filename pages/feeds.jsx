@@ -27,8 +27,16 @@ const Page = ({ data }) => {
   );
 };
 export async function getStaticProps() {
-  const response = await fetch(`http://localhost:8080/feeds`);
-  const data = await response.json();
+  // const response = await fetch(`http://localhost:8080/feeds`);
+  // const data = await response.json();
+  let data = [
+    { id: 1, title: "My blogs 1", description: "My blogs description 1" },
+    { id: 2, title: "My blogs 2", description: "My blogs description 2" },
+    { id: 3, title: "My blogs 3", description: "My blogs description 3" },
+    { id: 4, title: "My blogs 4", description: "My blogs description 4" },
+    { id: 5, title: "My blogs 5", description: "My blogs description 5" },
+    { id: 6, title: "My blogs 6", description: "My blogs description 6" },
+  ];
   return {
     props: {
       data,

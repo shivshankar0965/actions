@@ -1,0 +1,15 @@
+.feeds__app{
+    width: 60%;
+    margin: 20px auto;
+  }
+  .feeds__app_cards{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+  }
+  .feeds__app_card{
+    padding: 1.5rem;
+    border: 1.2px solid #fff;
+    border-radius: 10px;
+  }

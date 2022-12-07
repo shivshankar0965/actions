@@ -1,0 +1,13 @@
+.nav__bar{
+    background-color: rgb(150, 205, 135);
+    padding: 1rem 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav__bar_links > a{
+    padding: 1rem 1.8rem;
+    cursor: pointer;
+    margin-right: 0.5rem; 
+    border: 1px solid black;
+}
